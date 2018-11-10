@@ -1,0 +1,166 @@
+<head>
+<style>
+
+body, html {
+				height: 100%;
+				margin: 0;
+				font-size: 16px;
+				font-family: "Lato", sans-serif;
+				font-weight: 400;
+				line-height: 1.8em;
+				color: #666;
+			}
+			
+			
+			.pimg1, .pimg2, .pimg3 {
+				position: relative;
+				opacity: 0.7;
+				background-position: center;
+				background-size: cover;
+				background-repeat: no-repeat;
+				background-attachment: fixed;
+				
+				/*
+					fixed = parallax
+					scroll = normal
+				*/ 
+			}
+			
+			
+			
+			.pimg1 {
+				background-image: url(https://images.pexels.com/photos/378570/pexels-photo-378570.jpeg?auto=compress&cs=tinysrgb&h=650&w=940);
+				min-height: 100%;
+			}
+			
+			
+			
+			.pimg2 {
+				background-image: url(https://images.pexels.com/photos/9044/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=650&w=940);
+				min-height: 400px;
+			}
+			
+			
+			
+			.pimg3 {
+				background-image: url(https://images.pexels.com/photos/466685/pexels-photo-466685.jpeg?auto=compress&cs=tinysrgb&h=650&w=940);
+				min-height: 400px;
+			}
+			
+			
+			.section {
+				text-align: center;
+				padding: 50px 80 px;
+			}
+			
+			
+			
+			.section-light {
+				background-color: #f4f4f4;
+				color: #666;
+			}
+			
+			
+			
+			.section-dark {
+				background-color: #282e34;
+				color: #ddd;
+			}
+			
+			
+			
+			.ptext {
+				position: absolute;
+				top: 50%;
+				width: 100%;
+				text-align: center;
+				color: #000;
+				font-size: 27px;
+				letter-spacing: 8px;
+				text-transform: uppercase;
+			}
+			
+			
+			
+			.ptext .border {
+				background-color: #111;
+				color: #fff;
+				padding: 20px;
+			}
+			
+			
+			
+			
+			.ptext .border.trans {
+				background-color: ransparent;
+			}
+			
+			
+			
+			@media (max-width: 568px) {
+				.pimg1 .pimg2 .pimg3 {
+					background-attachment: scroll;
+				}
+			}
+			
+
+</style>
+</head>
+
+<body>
+	
+		<div class="pimg1">
+			<div class="ptext">
+				<span class="border"> 
+					Parallax Website
+				</span>				
+			</div>
+		</div>
+		
+		
+		<section class="section section-light">
+			<h2> Section One </h2>
+			<p> Lorem ipsum sit amet risus nullam eget felis eget nunc lobortis mattis aliquam faucibus purus in massa tempor nec feugiat nisl pretium fusce id velit ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed viverra tellus in hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue eget arcu dictum varius duis at consectetur lorem donec massa sapien faucibus et molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget egestas purus viverra accumsan in nisl nisi scelerisque eu</p>
+		</section>
+		
+		
+		<div class="pimg2">
+			<div class="ptext">
+				<span class="border trans"> 
+					Image Two Text
+				</span>				
+			</div>
+		</div>		
+		
+		
+		<section class="section section-dark">
+			<h2> Section Two </h2>
+			<p> Lorem ipsum sit amet risus nullam eget felis eget nunc lobortis mattis aliquam faucibus purus in massa tempor nec feugiat nisl pretium fusce id velit ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed viverra tellus in hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue eget arcu dictum varius duis at consectetur lorem donec massa sapien faucibus et molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget egestas purus viverra accumsan in nisl nisi scelerisque eu</p>
+		</section>
+		
+		
+		<div class="pimg3">
+			<div class="ptext">
+				<span class="border trans"> 
+					Image Three Text
+				</span>				
+			</div>
+		</div>	
+		
+		
+		<section class="section section-dark">
+			<h2> Section Three </h2>
+			<p> Lorem ipsum sit amet risus nullam eget felis eget nunc lobortis mattis aliquam faucibus purus in massa tempor nec feugiat nisl pretium fusce id velit ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed viverra tellus in hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue eget arcu dictum varius duis at consectetur lorem donec massa sapien faucibus et molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget egestas purus viverra accumsan in nisl nisi scelerisque eu</p>
+		</section>
+		
+		
+		<div class="pimg1">
+			<div class="ptext">
+				<span class="border"> 
+					Parallax Website
+				</span>				
+			</div>
+		</div>
+	
+	
+	</body>
