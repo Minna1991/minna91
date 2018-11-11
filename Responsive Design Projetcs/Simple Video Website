@@ -1,0 +1,136 @@
+<head>
+<style>
+
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:300&subset=latin-ext');
+			
+
+			
+			html, body {
+				height: 100vh;
+				margin: 0;
+		  	overflow: hidden;
+			}
+			
+
+			body {
+				background-image: url("https://cdn.pixabay.com/photo/2014/10/10/10/49/forest-483207_960_720.jpg");
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: cover;
+				color: white;
+				font-size: 40px;
+				font-family: 'work sans';
+				display: flex;
+				flex-direction: column;
+        z-index: -100;
+			}
+			
+			.middle {
+				flex-grow: 1;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				text-align: center;
+				flex-direction: column;
+			}
+			
+			.navbar {
+				display: flex;
+				justify-content: center;
+				text-align: center;
+				font-size: 16px;
+				font-family: arial;				
+			}
+			
+			video {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				min-width: 100%;
+				min-height: 100%;
+				z-index: -100;
+			}
+			
+			a {
+				color: white;
+				text-decoration: none;
+			}
+			
+			.menu {
+				margin-left: 10px;
+				margin-right: 10px;
+			}
+			
+			.button {
+				font-size: 16px;
+				font-family: arial;
+				background-color: rgba(0, 0, 0, 0.5);
+				padding: 10px 30px;
+				width: 80px;
+				display: inline-block;
+			}
+			
+			.button:hover {
+				background-color: teal;
+			}
+			
+			.menu:hover {
+				background-color: plum;
+				font-size: 20px;
+			}
+			
+	
+			
+			@media (max-width: 900px) {
+				.button {
+					background-color: rgba(0, 0, 0, 0.5);
+				}
+			}
+			
+
+ @media (max-height: 450px) {
+				a {
+					color: white;
+				text-decoration: none;
+				}
+			}
+
+
+</style>
+</head>
+
+<body>
+
+<video autoplay loop muted poster="https://images.pexels.com/photos/326055/pexels-photo-326055.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"> <source src="//player.vimeo.com/external/135711658.mobile.mp4?s=f46400b871d4e61e6b08e745969b9cef695a6ded&profile_id=116" type="video/mp4" width="100%">
+</video>
+		
+		<nav class="navbar">
+			<a class="menu" href="aboutus.html">About Us</a>
+			<a class="menu" href="products.html">Products</a>
+			<a class="menu" href="http://disney.com">Contact</a>
+		</nav>
+		<!-- nav = navigation bar -->
+		
+		
+
+		<div class="middle">Lorem ipsum dolor sit amet
+			<div>
+				<a class="button" href="/products">Products</a>
+				<a class="button" href="/categories">Categories</a>
+				<a class="button" href="/payment">Payment</a>
+			</div>
+		</div>
+			<!-- A divet lehet tologatni, a szöveget nem igazán -->
+		
+		<footer class="navbar"> &copy 2005- <span id="year"> </span> </footer>
+		
+    
+    <script>
+
+      var d = new Date();
+			var n = d.getFullYear();
+      document.getElementById("year").innerHTML = n;
+
+    </script>
+</body>
