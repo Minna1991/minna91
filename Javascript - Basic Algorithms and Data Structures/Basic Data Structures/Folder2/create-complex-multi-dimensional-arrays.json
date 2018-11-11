@@ -1,0 +1,1 @@
+{"index.js":"let myNestedArray = [\n  // change code below this line\n\n'unshift', false, 1, 2, 3, 'complex', 'nested',\n  ['loop', 'shift', 6, 7, 1000, 'method'], \n  [\n    ['deep'] \n  ],\n  [\n    [\n      ['deeper'] \n    ],\n    [\n      [\n        ['deepest'] \n      ]\n    ]\n  ]\n\n  // change code above this line\n];"}
