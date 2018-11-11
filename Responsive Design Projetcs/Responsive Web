@@ -1,0 +1,181 @@
+<!doctype html>
+<head>
+<style>
+
+*
+			{
+				margin: 0;
+				padding: 0;
+			}
+			
+			
+			header {
+				background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(https://images.pexels.com/photos/450035/pexels-photo-450035.jpeg?auto=compress&cs=tinysrgb&h=650&w=940);
+				height: 100vh;
+				background-size: cover;
+				background-position: center;
+			}
+			
+			
+			
+			.main-nav {
+				float: right;s
+				list-style: none;
+				margin-top: 0px;
+        font-size: 35px;
+			}
+			
+			
+			
+			.main-nav li {
+				display: inline-block;
+			}
+			
+			
+			
+			
+			
+			.main-nav li a {
+				color: white;
+				text-decoration: none;
+				padding: 5px 20px;
+				font-family: "Roboto", sans-serif;
+				font-size: 15px;
+			}
+			
+			
+			
+			
+			.main-nav li.active a {
+				border: 1px solid white;
+			}
+			
+			
+			
+			
+			
+			.main-nav li a:hover {
+				border: 1px solid white;
+			}
+			
+			
+			
+			.logo img {
+				width: 60px;
+				height: auto;
+				float: left;
+        position: left;
+        margin-top: 7px;
+			}
+			
+			
+			
+			
+			body {
+				font-family: monospace;
+			}
+			
+			
+			
+			
+			
+			.row {
+				max-width: 1200px;
+				margin: auto;
+			}
+			
+			
+			
+			.slogen {
+				position: absolute;
+				width: 1200px;
+				margin-left: 0px;
+				margin-top: 0px;
+			}
+			
+			
+			
+			h1 {
+				color: white;
+				text-transform: uppercase;
+				font-size: 70px;
+				text-align: center;
+				margin-top: 275px;
+			}
+			
+			
+			
+			
+			.button {
+				margin-top: 30px;
+				margin-left: 440px;
+			}
+			
+			
+			
+			.btn {
+				border: 1px solid white;
+				padding: 10px 30px;
+				color: white;
+				text-decoration: none;
+				margin-right: 5px;
+				font-size: 13px;
+				text-transform: uppercase;
+			}
+			
+			
+			
+			.btn-one {
+				background-color: 	#FF8C00;
+				font-family: "Roboto", sans-serif;
+			}
+			
+			
+			
+			.btn-two {
+				font-family: "Roboto", sans-serif;
+			}
+			
+			
+			
+			.btn-two:hover {
+				background-color: 	#FF8C00;
+				transition: all 0.5s ease-in;
+			}
+
+
+</style>
+</head>
+
+<body>
+		
+		<header>
+			<div class="row">
+				<div class="logo">
+					<img src="https://image.flaticon.com/icons/svg/1147/1147560.svg">
+				</div>
+				<ul class="main-nav">
+					<li class="active"> <a href=""> Home </a> </li>
+					<li> <a href=""> Services </a> </li>
+					<li> <a href=""> About </a> </li>
+					<li> <a href=""> Contact </a> </li>
+					<li> <a href=""> News </a> </li>
+					<li> <a href=""> FAQ </a> </li>
+				</ul>
+			</div>
+			
+			<div class="slogen">
+				<h1> Are You Ready? </h1>
+					<div class="button">
+						<a href="" class="btn btn-one"> Watch Video </a>
+						<a href="" class="btn btn-two"> Explore more </a>
+					</div>
+			</div>
+			
+			
+		</header>
+		
+				
+	</body>
+  
+</html>
