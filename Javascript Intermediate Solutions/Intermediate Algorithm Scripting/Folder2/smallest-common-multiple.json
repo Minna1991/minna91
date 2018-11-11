@@ -1,0 +1,1 @@
+{"index.js":"function smallestCommons(arr) {\n\n var max = Math.max(arr[0], arr[1]);\n  var min = Math.min(arr[0], arr[1]);\n  var multi = max;\n\n  for(var i = max; i >= min; i--){\n    if(multi % i !== 0){\n      multi += max; \n      i = max;\n    } \n  }\n\n  return multi;  \n}\n\n\nsmallestCommons([1,5]);"}
