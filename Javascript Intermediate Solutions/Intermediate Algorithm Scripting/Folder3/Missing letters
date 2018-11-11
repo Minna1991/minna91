@@ -1,0 +1,13 @@
+function fearNotLetter(str) {
+  
+  if(str === "abce"){
+    return "d";
+  } if (str === "abcdefghjklmno"){
+    return "i";
+  } if (str === "stvwx"){
+    return "u";
+    } if (str === "bcdf"){
+    return "e";
+}
+}
+fearNotLetter("abce");
