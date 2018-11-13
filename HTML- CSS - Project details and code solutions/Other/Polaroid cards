@@ -1,0 +1,48 @@
+<!doctype html>
+	<head>
+		<style>	
+	
+        div.polaroid {
+          width: 400px;
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          text-align: center;
+          margin: auto;
+          padding: 10px;
+        }
+
+        div.container {
+         margin: auto;
+         padding: 10px;
+        }
+        
+	
+		</style>
+	</head>
+	
+	<body>
+		    
+      <div class="polaroid">
+        <img src="http://georgievsound.com/uploads/2012/01/The-SEA-Free-Download-Recording-w.jpg" alt="" style="width:400 height:300;">
+        <div class="container">
+          <p>Lorem ipsum</p>
+        </div>
+      </div>
+      <br><br>
+
+      <div class="polaroid">
+        <img src="https://www.frugal-rv-travel.com/images/campatredcanyon.jpg" alt="" style="width:400 height:300;">
+        <div class="container">
+          <p>Lorem ipsum</p>
+        </div>
+      </div>
+      <br><br>
+
+      <div class="polaroid">
+        <img src="http://www.tech-pro.net/wallpaper/crummock-t.jpg" alt="" style="width:400 height:300;">
+        <div class="container">
+          <p>Lorem ipsum</p>
+        </div>
+      </div>	
+	
+	</body>
+</html>
