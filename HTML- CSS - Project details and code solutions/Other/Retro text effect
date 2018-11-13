@@ -1,0 +1,17 @@
+<!doctype html>
+	<head>
+		<style>	
+	
+	    body { background-color:#ccffff; }
+      p { font-size:160px; color:#660033; text-shadow: 5px 5px 0px #eee, 7px 7px 0px #707070; text-align: center; }
+	
+	
+		</style>
+	</head>
+	
+	<body>
+	
+	  <p>Lorem ipsum</p>
+	
+	</body>
+</html>
