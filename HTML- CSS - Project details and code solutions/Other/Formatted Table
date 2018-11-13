@@ -1,0 +1,170 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+		
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+   
+   <style>
+   
+      *{
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+	font-family: Century Gothic, CenturyGothic, sans-serif;
+	font-size: 20px;
+	letter-spacing: normal;
+}
+
+
+#content {
+   background-color: white;
+   width: 750px;
+	padding: 40px;
+   margin: 0 auto;      
+}
+
+
+table.table1 {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.4em;
+    font-style: normal;
+    border-collapse: separate;
+}
+
+
+.table1 thead th {
+    padding: 15px;
+    color: #fff;
+    border: 3px solid #990033;
+    background-color: #cc3399;
+}
+
+
+.table1 thead th:empty {
+    background: transparent;
+    border: none;
+}
+
+
+.table1 tbody th {
+    color: #fff;
+    background-color: #cc66cc;
+    border: 3px solid #732673;
+    padding: 0px 10px;
+}
+
+
+.table1 tfoot td {
+    color: #ff0000;
+    font-size: 25px;
+    text-align: center;
+    padding: 10px 0px;
+    text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+.table1 tfoot th {
+    color: #666;
+}
+
+
+.table1 tbody td {
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(102, 0, 51, 0.3);
+    border: 3px solid #660033;
+    border-radius: 1px;
+    color: purple;
+}
+
+
+#row {
+	color: purple;
+	font-size: 25px;
+}
+
+
+i {
+	font-size: 25px;
+}
+   
+   </style>
+   
+	</head>
+
+<body>
+	
+<div id="content">
+   <span class="scroll"></span>
+        <table class="table1">
+            <thead>
+                <tr>
+						<th></th>
+							<th scope="col" abbr="Bronze">Bronze</th>
+                     <th scope="col" abbr="Silver">Silver</th>
+                     <th scope="col" abbr="Gold">Gold</th>
+                      <th scope="col" abbr="Platinum">Platinum</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <th scope="row" id="row">Investment</th>
+                        <td>$5.99</td>
+                        <td>$7.99</td>
+                        <td>$9.99</td>
+                        <td>$14.99</td>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    <tr>
+                        <th scope="row">Lorem ipsum</th>
+                        <td>Feature1</td>
+                        <td>Feature2</td>
+                        <td>Feature3</td>
+                        <td>Feature4</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Lorem ipsum</th>
+                        <td>Up 2 Users</td>
+                        <td>Up 5 Users</td>
+                        <td>Up 10 Users</td>
+<td>Up to 20 Users</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Lorem ipsum</th>
+<td>-</td>
+<td>-</td>
+<td>Unlimited</td>
+<td>Unlimited</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Lorem ipsum</th>
+                        <td>Feature1</td>
+                        <td>Feature2</td>
+                        <td>free</td>
+                        <td>free</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Lorem ipsum</th>
+                        <td><span class="check"><i class="fas fa-check-circle"></i></span></td>
+                        <td><span class="check"><i class="fas fa-check-circle"></i></span></td>
+                        <td><span class="check"><i class="fas fa-check-circle"></i></span></td>
+                        <td><span class="check"><i class="fas fa-check-circle"></i></span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Lorem ipsum</th>
+                        <td><span class="check"><i class="fas fa-check-circle"></i></span></td>
+                        <td><span class="check"><i class="fas fa-check-circle"></i></span></td>
+                        <td><span class="check"><i class="fas fa-check-circle"></i></span></td>
+                        <td><span class="check"><i class="fas fa-check-circle"></i></span></td>
+                    </tr>
+                </tbody>
+            </table>
+
+	</body>
+</html>
