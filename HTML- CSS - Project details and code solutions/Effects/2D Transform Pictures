@@ -1,0 +1,53 @@
+<!doctype html>
+	<head>
+		<style>	
+	
+	    li { 
+        display:inline; 
+        list-style:none; 
+        margin-right:80px; 
+      }
+
+      ul { 
+        padding:80px; 
+      }
+
+      #one:hover {
+        border:2px solid blue; 
+        border-radius:5px;
+        box-shadow:5px 5px gray; 
+        transform:scale(1.5, 1.5)
+        rotate(-15deg); 
+      }
+
+      #two:hover {
+        border:2px solid blue; 
+        border-radius:5px;
+        box-shadow:5px 5px gray; 						
+        transform:scale(1.5, 1.5) rotate(0deg);
+      }
+
+      #three:hover {
+        border:2px solid blue; 
+        border-radius: 5px; 
+        box-shadow:5px 5px gray;
+        transform:scale(1.5, 1.5) rotate(15deg); 
+      }	
+	
+		</style>
+	</head>
+	
+	<body>
+	
+	  <ul>
+      <li><img id="one" src="https://images.pexels.com/photos/449627/pexels-photo-449627.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" width="240px"
+      height="200px"></li>
+      <li><img id="two" src="https://images.pexels.com/photos/34950/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=650&w=940" width="240px"
+      height="200px"></li>
+      <li><img id="three" src="https://images.pexels.com/photos/814499/pexels-photo-814499.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" width="240px"
+      height="200px"></li>
+    </ul>
+	
+	
+	</body>
+</html>
