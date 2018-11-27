@@ -1,0 +1,23 @@
+<!doctype html>
+  <head>
+     <meta http-equiv="refresh" content="3; URL=<index.php?<?php echo’user=$user&pwd=$pwd&level=$level’ ?>">  // refresh in 3 seconds
+  </head>  
+  <body>
+      <p>
+
+        <?php
+
+            function sorry($msg,$from=1,$glob="")
+            {
+            header("Location: sorryuser.php?from=$from&msg=$msg&glob=$glob");
+            }
+
+            if(empty($name)) sorry("The name is missing",1);
+            if(empty($loginname)) sorry("The loginname is missing!",1);
+            if(empty($email)) sorry("The e-mail is missing!",1);
+            
+        ?>
+
+      </p>
+    </body>
+</html>
