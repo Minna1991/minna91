@@ -1,0 +1,26 @@
+<!doctype html>
+  <body>
+      <p>
+
+        <?php
+
+          <?php
+
+            $var = 'ABCDEFGH:/MNRPQR/';
+            echo "Eredeti: $var<hr>\n";
+            
+            // Beszúrjuk a 'bob' szót a $var elejére
+            echo substr_replace($var, 'bob', 0, 0) . "<br>\n";
+   
+            // Ha a második paraméter negatív, akkor a szöveg végéről indul a csere.
+            echo substr_replace($var, 'bob', 10, -1) . "<br>\n";
+            echo substr_replace($var, 'bob', -7, -1) . "<br>\n";
+
+            // Töröljük a szöveg elejéről
+            echo substr_replace($var, '', 10, -1) . "<br>\n";
+                        
+        ?>
+
+      </p>
+    </body>
+</html>

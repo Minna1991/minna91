@@ -1,0 +1,29 @@
+<!doctype html>
+  <body>
+      <p>
+
+        <?php
+
+          <?php
+
+            $nick1 = "Tom";
+            $nick2 = "Sam";
+            $array = array
+            (
+            $nick1 => array("name" => "Tom Thomas",
+                          "email" => "thomas@li.com"),
+            $nick2 => array("name" => "Sam Johnson",
+                          "email" => "johnson@li.com")
+            );
+            echo("<pre><b>");
+            print_r($array);
+            echo("<hr>");
+            print_r($array["Tom"]["name"]);
+
+            echo("</b></pre>");
+                        
+        ?>
+
+      </p>
+    </body>
+</html>
