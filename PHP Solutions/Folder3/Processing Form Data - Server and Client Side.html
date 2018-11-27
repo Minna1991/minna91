@@ -1,0 +1,76 @@
+<!doctype html>
+  <body>
+      <p>
+
+        <?php
+
+          
+
+            $message = ’’;
+            $adat =’’;
+            $ok = True;
+            if (isset($_POST(”OK”) && $_POST[”OK”] ==”Elküld”){
+
+             // Ellenőrizzük az adat léteznik-e és megfelelő formátumúak?
+            $adat = -1;
+            if (isset($_POST[”adat”])){
+               $adat= $_POST[”adat”];
+               if (is_int($adat)){
+                  if (!($adat>1000)){
+                    $ok = $ok && False; //Ezernél nagyobb értéket ellen
+                    $mess_adat = ’<FONT color=”#FF0000”>Túl kicsi érték!</FONT><BR>’;
+                  }
+            }else{
+              $mess_adat = ’<FONT color=”#FF0000”>Hibás adattípus!</FONT><BR>’;
+              }
+            }else{
+            $mess_adat = ’<FONT color=”#FF0000”>Hiányzó adat!</FONT><BR>’;
+            }
+
+              //Ellenőrizzük, hogy a folyószámla neve megfelel-e?
+            $fszamla = -1;
+            if (isset($_POST[”fszamla”])){
+            $fszamla= $_POST[”fszamla”];
+            if (is_string($fszamla)){
+                $fszamla = $urldecode($fszamla); //Esetleges URL kódolás dekódolja
+                $fszamla = strip_tags ( $fszamla); //kiveszi a HTML és PHP tageket
+                $fszamla = stripcslashes ( $fszamla); // kiveszi a \ jeleket
+                
+                //SQL injekció kiszűrése
+            $keres = array (”WHERE”,”LIKE”,”(”,”)”);
+            $csere = array (” ”,” ”,” ”,” ”);
+            $fszamla = str_replace($keres,$csere,$fszamla);
+        
+            if (van_e_szamla($fszamla)){
+              $ok = $ok && False; //Ezernél nagyobb értéket ellenőrzök éppen
+              $mess_fszamla = ’<FONT color=”#FF0000”>Nincs ilyenfolyószámla!</FONT><BR>’;
+             }
+            }else{
+              $mess_fszamla = ’<FONT color=”#FF0000”>Hibás adattípus!</FONT><BR>’;
+            }
+            }else{
+            $mess_fszamla = ’<FONT color=”#FF0000”>Hiányzó adat!</FONT><BR>’;
+            }
+           
+             // .... itt ellenőrizzük a többi szükséges mező értékét és létezését ...
+            }
+           
+            if(!$ok){
+               print(’<FORM name=”pelda” action=”urlap.php” method=”POST”>’);
+               print($mess_adat);
+               print(<’INPUT type=”text” name=”adat” value=<% = $adat %> > ’);
+           // ... további beviteli mezők ...
+            print(’<INPUT type=”submit” name =”OK” value=”Elküld”>’);
+            print(’</FORM>’);
+            }else{
+                //.... adatok feldolgozása ...
+            header("Location:
+            http://www.example.com/"); //A böngészőt átdobom a következő oldalra exit;
+            // a kód többi része ne fusson le
+            }
+                                                
+        ?>
+
+       </p>   
+   </body>
+</html>
