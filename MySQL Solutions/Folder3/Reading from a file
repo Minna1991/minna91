@@ -1,0 +1,36 @@
+<!doctype html>
+  <body>
+      <p>
+
+        Visitors:<br>
+
+        <?php
+
+            $File = 'counter.txt';
+            // visitors counter file name
+            if (file_exists($File))
+            // is the file exist?
+                {
+                $fp = fopen($File,"r");
+                // open to read
+                $num = fread($fp, filesize($File));
+                // read the file's content to the $num variable
+                fclose($fp);
+                // clos the file
+                $num=$num+1;
+                // variable ++
+                $fp = fopen($File,"w");
+                // open the same file, but for writing
+                fwrite($fp, $num, 10);
+                // write the var's value
+                fclose($fp);
+                // close the file
+                echo('<b>'.chop($num).'</b>');
+                // write the var's value in a html
+                }
+                                                
+        ?>
+
+       </p>   
+   </body>
+</html>
