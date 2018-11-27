@@ -1,0 +1,21 @@
+<!doctype html>
+  <body>
+      <p>
+
+        <?php
+
+          <?php
+
+            $text = "\t\tThese are a few words :) ... ";
+            $trimmed = trim($text);
+            // $trimmed = "These are a few words :) ..."
+            $trimmed = trim($text," \t.");
+            // $trimmed = "These are a few words :)"
+            $clean = trim($binary,"\0x00..\0x1F");
+            // trim the ASCII control characters at the beginning and end of $binary
+                                                
+        ?>
+
+      </p>
+    </body>
+</html>
