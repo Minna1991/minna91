@@ -1,0 +1,15 @@
+<!doctype html>
+  <body>
+      <p>
+
+        <?php
+
+            $link = mysql_connect ("kraemer", "marliesle", "secret") or die ("Could not connect");
+            print ("Connected successfully");
+            mysql_close ($link);
+                                                
+        ?>
+
+       </p>   
+   </body>
+</html>
