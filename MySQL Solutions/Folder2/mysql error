@@ -1,0 +1,21 @@
+<!doctype html>
+  <body>
+      <p>
+
+        <?php
+
+            mysql_connect("list1");
+            echo mysql_errno().": ".mysql_error()."<br>";
+
+            mysql_select_db("nodatabase");
+            echo mysql_errno().": ".mysql_error()."<br>";
+
+            $conn = mysql_query("SELECT * FROM nodatatable");
+            echo mysql_errno().": ".mysql_error()."<br>";
+                      
+                                                
+        ?>
+
+       </p>   
+   </body>
+</html>
