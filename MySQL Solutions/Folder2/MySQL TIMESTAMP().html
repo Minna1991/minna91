@@ -1,0 +1,37 @@
+<!doctype html>
+  <body>
+      <p>
+
+        <?php
+
+            Function koncertlista($datum)
+            {
+           
+             // invoice
+            $qry ="SELECT UNIX_TIMESTAMP(When) AS Time, When, Where FROM event WHERE where > '".$datum."'";
+            $result = @mysql_query($qry, $fc);
+            $str ="<ul>";
+            while ($a = mysql_fetch_object($result)) {
+                $str .= "<li>".date("Y.M.d, D H:i",$a->Time).", ".$a->When."<br>";
+                $str .= $a->Where."<br>Ticket:".$a->Ticket." Ft</li>";
+            }
+             $str .="</ul>";
+            echo $str;
+            return;
+            }
+           
+             // ivoice the function with current date, the format is very important
+            concertlist(date("YmdHis"));
+
+            
+            // The result:
+            // 2002.Jan.12, Sat 09:12, Koncert
+            // Uj várklub
+            // Ticket:500 Ft
+                      
+                                                
+        ?>
+
+       </p>   
+   </body>
+</html>

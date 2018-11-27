@@ -1,0 +1,36 @@
+<!doctype html>
+  <body>
+      <p>
+
+        <?php
+
+            include('adodb.inc.php');
+            $conn = &ADONewConnection('access'); # connection acces
+            
+            $conn->PConnect('northwind');
+            # connect with MS ACCESS with northwind dsn
+            $recordSet = &$conn->Execute('select CustomerID,OrderDate from Orders');
+            if (!$recordSet)
+                print $conn->ErrorMsg(); # error message if there is no result
+            else
+            while (!$recordSet->EOF) {
+                $fld = $recordSet->FetchField(1); # first field
+                $type = $recordSet->MetaType($fld->type);
+                if ( $type == 'D' || $type == 'T')
+                    print $recordSet->fields[0].' '.
+                        $recordSet->UserDate($recordSet->fields[1],'m/d/Y').'<br>';
+                     else
+                         print $recordSet->fields[0].' '.$recordSet->fields[1].'<br>';
+
+            $recordSet->MoveNext();
+            }
+
+            $recordSet->Close(); # optional
+            $conn->Close(); # optional
+                      
+                                                
+        ?>
+
+       </p>   
+   </body>
+</html>
