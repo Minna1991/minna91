@@ -1,0 +1,38 @@
+<!doctype html>
+  <body>
+      <p>
+
+        <?php
+
+            //egyszerű rekord megjelenítése
+            $result=mysql_db_query($querydb,$query);
+            $sor=mysql_num_rows($result);
+            $n=mysql_num_fields($result);
+            print(”<table>”);
+            for($i=0;$i<$n;$i++)
+            {
+                print(”<tr>”);
+                //Oszlopnév/mezőnév bemásolása tömbbe későbbi felhasználásra
+                $mezok=mysql_fetch_field($result);
+                $meznev[]=$mezok->name;
+
+                //Oszlop/Mező adatainak kilistázása.
+                      print(”<td align=right>”);
+                 print($meznev[$i]);
+                //A mező neve
+                         print(”</td>”)
+                      print(”<td>”);
+                    print($sor[$meznev]);
+                //A mező értéke
+                  print(”</td>”)
+                 print(”</tr>”);
+
+            }
+            print(”</table>”);
+            mysql_close();
+                                                
+        ?>
+
+       </p>   
+   </body>
+</html>

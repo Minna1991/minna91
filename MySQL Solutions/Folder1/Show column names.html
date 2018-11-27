@@ -1,0 +1,38 @@
+<!doctype html>
+  <body>
+      <p>
+
+        <?php
+
+            ......
+            $qry = ”SELECT * FROM tabla”;
+            $result=mysql_db_query($qry,$query);
+            $m=mysql_num_rows($result);
+            $n=mysql_num_fields($result);
+            echo ”<TABLE><TR>”;
+            for($i=0;$i<$n;$i++)
+            {
+                $mezok=mysql_fetch_field($result);
+                echo "<TD>".$mezok->name."</TD>";
+                $meznev[]=$mezok->name;
+            }
+            echo"</TR>";
+            // mezok kiirasanak vege //
+
+            // mezokben levo adatok kiirasa //
+            for($i=0;$i<$m;$i++)
+            {
+                    echo"<TR>";
+                $adat=mysql_fetch_array($result);
+                for($j=0;$j<$n;$j++)
+                echo "<TD>".$adat[$meznev[$j]]."</TD>";
+                 echo"</TR>";
+            }
+
+            echo ”</TABLE>”;
+                                                
+        ?>
+
+       </p>   
+   </body>
+</html>
