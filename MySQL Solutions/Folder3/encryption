@@ -1,0 +1,66 @@
+<!doctype html>
+  <body>
+      <p>
+
+        Visitors:<br>
+
+        <?php
+
+            $name ="";
+            $pwd ="";
+            Session_start();
+            if(!isset($_SESSION["logged_in"])) $_SESSION["logged_in"] = False;
+
+            If (!$_SESSION["logged_in"]){
+
+                if( isset($_POST["name"]) && isset($_POST["pwd"])){
+                //if later we want to use login form with POST
+                $name = $_POST["name"];
+                $pwd = $_POST["pwd"];
+
+            // if we wantto use the browser's authentication window
+            // if (isset($PHP_AUTH_USER) && isset ($PHP_AUTH_PW)){
+            // $name = $PHP_AUTH_USER;
+            // $pwd = $PHP_AUTH_PW;
+            //
+
+            // check the loginname and th password from the databas
+            mysql_connect("hostname", "username", "password")
+             or die ("Unable to connect to database.");
+
+            // open the password database
+            mysql_select_db("Userlista") or die ("Unable to select database.");
+
+            // send the invoice the users table
+            $sql = "SELECT * FROM users
+                 WHERE username='$name' and password='$pwd'";
+
+            // the result go into the $result var
+            $result = mysql_query($sql);
+
+            // if the result has 0 row, then there is no user-password pair
+            // if there is 1, then there is login-password pair
+
+            $num = mysql_numrows($result);
+
+            if($num>0){ // write here the password checking
+              $_SESSION["logged_in"] = True; // or simple text / mysql invoice, etc... 
+                  }
+              }
+            }
+
+            If (!($_SESSION["logged_in"])){
+                // or we use a login form, and we send the values with POST
+                include ("login.html");
+
+                // or simulate the browser's login page
+                // header('WWW-Authenticate: Basic realm="Login!"');
+                // header('HTTP/1.0 401 Unauthorized');
+            exit;
+            }
+                                                
+        ?>
+
+       </p>   
+   </body>
+</html>
