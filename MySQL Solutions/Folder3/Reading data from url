@@ -1,0 +1,24 @@
+<!doctype html>
+  <body>
+      <p>
+
+        <?php
+
+               // the file is given with an url
+            $filename =”http://www.szily.hu/szily/szily.css”;
+            $asor = @file($filename);
+            if(count($asor==0)){
+            die(”The file is doesn't exist”);
+            }
+                // write the rows
+            foreach ($asor as $line_num => $sor) {
+            echo "#<b>{$line_num}</b> sor : " . htmlspecialchars($sor) . "<br>\n";
+            }
+                 // read the file and convert the rows to strings
+            $html = implode ('', file ('http://www.szily.hu/szily/'));
+                                                
+        ?>
+
+       </p>   
+   </body>
+</html>
