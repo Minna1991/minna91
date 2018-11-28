@@ -1,0 +1,51 @@
+<!doctype html>
+	<head>
+		<meta http-equiv="content-taype" content="text/html; charset=utf-8">
+		<style>
+    
+      img {
+        width: 400px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+
+      button {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+
+      #left {
+        background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet); 
+        color: white;
+        border-radius: 5px;
+        padding: 8px;
+      }
+
+
+    #right {
+      color: black;
+      border-radius: 5px;
+      padding: 8px;
+
+    }
+    
+    </style>
+	</head>
+	<body>
+		
+		<img id="myImage" src="http://orig01.deviantart.net/2c15/f/2016/096/1/2/lines_by_arkay9-d9xzw14.png">
+		<br>
+
+    <button id="left" onclick="document.getElementById('myImage').src='http://orig15.deviantart.net/387b/f/2016/096/3/d/warm_by_arkay9-d9xzuz9.png'">Color it!</button>
+
+    <button id="right" onclick="document.getElementById('myImage').src='http://orig01.deviantart.net/2c15/f/2016/096/1/2/lines_by_arkay9-d9xzw14.png'">Line art</button>
+    <br>		
+    <p> Art by Chicken Smothie <a href="https://www.chickensmoothie.com/Forum/viewtopic.php?f=21&t=3013503"">link</a>
+    </p>		
+				
+	</body>
+</html>
