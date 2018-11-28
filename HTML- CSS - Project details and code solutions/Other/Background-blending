@@ -1,0 +1,50 @@
+<html>
+<head>
+	<style>
+		
+			.blended {
+			background-image: url(https://images.pexels.com/photos/36764/marguerite-daisy-beautiful-beauty.jpg?auto=compress&cs=tinysrgb&h=650&w=940);
+			background-color: red;
+			background-blend-mode: multiply;
+		}
+
+		.original {
+			background-image: url(https://images.pexels.com/photos/36764/marguerite-daisy-beautiful-beauty.jpg?auto=compress&cs=tinysrgb&h=650&w=940);
+		}
+
+		body {
+			padding: 20px;
+		}
+		.blend > div {
+			float: left;
+			width: 200px;
+			height: 200px;
+			background-size: cover;
+		}
+		.blend {
+			width: 600px;
+			overflow: hidden;
+		}
+		.screencap {
+			width: 600px;
+		}
+
+	</style>
+</head>
+<body>
+
+<div class="blend">
+   <div class="original">
+  </div>
+  <div class="blended">
+  </div>
+</div>
+
+<br><br>
+
+<img class="screencap" src="https://images.pexels.com/photos/36764/marguerite-daisy-beautiful-beauty.jpg?auto=compress&cs=tinysrgb&h=650&w=940">
+
+</body>
+</html>
+
+
